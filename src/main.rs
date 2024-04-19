@@ -17,6 +17,8 @@ UserCreatedHandler {
         let ten_millis = time::Duration::from_millis(1000);
         let now = time::Instant::now();
 
+        thread::sleep(ten_millis);
+
         println!("In Dimas’s Computer [129500004y]. Message received: {:?}", message);
         Ok(())
     }
